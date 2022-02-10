@@ -2,8 +2,27 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat&display=swap');
 
-.app {
+body {
     font-family: 'Bitter', serif;
     font-family: 'Montserrat', sans-serif;
-    background-color: lightblue;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents {
+    min-height: 100vh;
+}
+
+.header {
+    border: 1px solid black;
+    width: 1440px;
+    height: 100px;
+    padding: 0 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

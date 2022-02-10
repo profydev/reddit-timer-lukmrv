@@ -9,11 +9,6 @@ import Search from './Pages/Search';
 function App() {
   return (
     <Router>
-      <header>
-        <Link to="/">Home</Link>
-        <Link to="/search">Search</Link>
-      </header>
-
       <Header />
 
       <Routes>
@@ -21,17 +16,22 @@ function App() {
         <Route path="/search" element={<Search />} />
       </Routes>
 
-      <div className="app">App Placeholder</div>
-
       <Footer />
     </Router>
   );
 }
 
 const Header = () => (
-  <header>
-    <Link to="/">Home</Link>
-    <Link to="/search">Search</Link>
+  <header className="header">
+    <Link to="/">
+      <img src="logo.svg" alt="logo" />
+    </Link>
+    <div>
+
+      <Link to="/search">Search</Link>
+      <Link to="/">How it works</Link>
+      <Link to="/">About</Link>
+    </div>
   </header>
 );
 
