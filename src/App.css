@@ -1,0 +1,9 @@
+/* @import-normalize; */
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat&display=swap');
+
+.app {
+    font-family: 'Bitter', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightblue;
+}
